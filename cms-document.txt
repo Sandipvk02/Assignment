@@ -1,0 +1,34 @@
+CMS -- Document
+----------------
+-->cms   Application tool bascially is used to resolved articles issues.
+---> In the URL open the link http://172.16.1.95:8080/cms/index.jsp
+display  login page.
+-->after login  display dashbord ,  In the user_dashboard.jsp there are 4 search boxes:
+--> it will display the status of the articles.
+1)Journal - This will search data for particular journal using Journal ID.
+2)Article -  This will search data for particular journal using Article ID.
+3)Article Status - This will search data for all journal for particular status (such FS_NOTSTARTED, IGQC_NOTSTARTED, QC_FAILED etc.).
+4)Customer Stage - This will data for all journal for particular stage (such as S100, S200 etc.).
+-->Upload - The purpose of this button is to upload the zip file which should be of format MNT_ELSEVIER_JOURNAL_JID_AID_110.zip. Before uploading the check box against the journal in the table should be checked.
+-->Download - The purpose of this button is to download the zip file from the server.
+-->issue of Aritcles.
+1)tex1.xml  parsing.
+2)Qc faild.
+3)section tag is null.
+4)fs,igqc faild.
+--> stages in  cms
+---------------------
+
+
+
+        FS                       IGQC
+        |                          |
+        |                          |
+        |                          |
+        |
+        |__        INDESIGN  ______|
+        
+->Issue of server stuck int INDESIGN server pagination   we have to change TextStyle.dba  by rename  old backup  file.
+-->autopagination/cms/indesign/indesign_pagination_system_cs5/indesign_script/fontstylesetting.
+-->I resolved two articles.
+-->Indesign  issue solved on the server.
